@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.code.ebarrios.kakchilingo.AprenderActivity">
+
+    <include layout="@layout/actionbar_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:padding="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/logoKakchiquel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/txtKakchiquel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kakquichel"
+                android:textSize="25dp"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        android:padding="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/logoPoqomchi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/txtPoqomchi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poqomchi"
+            android:textSize="25dp"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp"
+        android:padding="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/logoKiche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/txtKiche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiche"
+            android:textSize="25dp"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

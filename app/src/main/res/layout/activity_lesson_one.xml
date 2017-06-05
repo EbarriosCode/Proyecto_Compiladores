@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.code.ebarrios.kakchilingo.LessonOneActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<include layout="@layout/actionbar_toolbar"></include>
+    <TextView
+        android:id="@+id/TituloLeccion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál de éstas palabras significa Mujer?"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/instrucciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haz touch sobre el texto o la imagen"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="25dp"/>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recicladorOpciones"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:scrollbars="vertical"
+    android:layout_marginTop="100dp"
+    >
+
+</android.support.v7.widget.RecyclerView>
+</RelativeLayout>
