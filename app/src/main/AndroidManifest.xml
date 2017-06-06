@@ -20,7 +20,9 @@
             android:name=".AprenderActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".Leccion1Activity" />
-        <activity android:name=".LessonOneActivity"></activity>
+        <activity android:name=".LessonOneActivity" />
+        <activity android:name=".LessonTwoActivity" />
+        <activity android:name=".LessonThreeActivity"></activity>
     </application>
 
 </manifest>

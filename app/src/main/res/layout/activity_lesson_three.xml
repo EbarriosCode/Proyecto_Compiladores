@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.code.ebarrios.kakchilingo.LessonThreeActivity">
+
+    <include layout="@layout/actionbar_toolbar"></include>
+    <TextView
+        android:id="@+id/TituloLeccion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué palabra significa Hombre?"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/instrucciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haz touch sobre la imagen para responder"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="15dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recicladorOpcionesThree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:scrollbars="vertical"
+        android:layout_marginTop="100dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
