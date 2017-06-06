@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.code.ebarrios.kakchilingo.LessonSixActivity">
+
+    <include layout="@layout/actionbar_toolbar"></include>
+
+    <TextView
+        android:id="@+id/tituloLeccion6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toca los pares"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/uno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/cuatro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/cinco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/seis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/btnMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mujer"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnMujerTraduccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ixöq"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/btnHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hombre"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnHombreTraduccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ak´wal"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnNino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="niño"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnNinoTraduccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="achi"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalificarLeccion6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calificar"
+        android:layout_marginTop="50dp"
+        style="@style/RaisedButtonDark"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+</LinearLayout>

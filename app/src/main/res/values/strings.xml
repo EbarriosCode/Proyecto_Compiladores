@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">KakchiLingo</string>
+    <string name="app_name">KaqchiLingo</string>
+
+    <string name="parUnoLeccion6">Combinación 1 </string>
+    <string name="parDosLeccion6">Combinación 2 </string>
+    <string name="parTresLeccion6">Combinación 3 </string>
 </resources>

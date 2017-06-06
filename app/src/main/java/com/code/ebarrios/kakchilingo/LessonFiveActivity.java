@@ -59,7 +59,7 @@ public class LessonFiveActivity extends AppCompatActivity implements View.OnClic
                             .setPositiveButton("AVANZAR", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    startActivity(new Intent(LessonFiveActivity.this, LessonFiveActivity.class));
+                                    startActivity(new Intent(LessonFiveActivity.this, LessonSixActivity.class));
                                 }
                             });
                     ventana.show();
