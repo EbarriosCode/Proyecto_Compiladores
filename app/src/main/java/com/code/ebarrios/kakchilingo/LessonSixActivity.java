@@ -76,13 +76,48 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
         switch (v.getId())
         {
             case R.id.btnMujer:
-                if(two.equals("") )
+                if(one.equals("") )
                 {
                     txtOne.setText("Mujer");
                     btnMujer.setEnabled(false);
                     btnMujer.setBackgroundColor(Color.GRAY);
+                    break;
                 }
-                break;
+                if(two.equals("") )
+                {
+                    txtTwo.setText("Mujer");
+                    btnMujer.setEnabled(false);
+                    btnMujer.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(three.equals("") )
+                {
+                    txtThree.setText("Mujer");
+                    btnMujer.setEnabled(false);
+                    btnMujer.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(four.equals("") )
+                {
+                    txtFour.setText("Mujer");
+                    btnMujer.setEnabled(false);
+                    btnMujer.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(five.equals("") )
+                {
+                    txtFive.setText("Mujer");
+                    btnMujer.setEnabled(false);
+                    btnMujer.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(six.equals("") )
+                {
+                    txtSix.setText("Mujer");
+                    btnMujer.setEnabled(false);
+                    btnMujer.setBackgroundColor(Color.GRAY);
+                    break;
+                }
 
             case R.id.btnMujerTraduccion:
                 if(one.equals(""))
@@ -90,14 +125,43 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
                     txtOne.setText("Ixöq");
                     btnMujerTraduccion.setEnabled(false);
                     btnMujerTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
                 }
-                if(!one.equals(""))
+                if(two.equals(""))
                 {
-                    txtOne.setText("Ixöq");
+                    txtTwo.setText("Ixöq");
                     btnMujerTraduccion.setEnabled(false);
                     btnMujerTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
                 }
-                break;
+                if(three.equals(""))
+                {
+                    txtThree.setText("Ixöq");
+                    btnMujerTraduccion.setEnabled(false);
+                    btnMujerTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(four.equals(""))
+                {
+                    txtFour.setText("Ixöq");
+                    btnMujerTraduccion.setEnabled(false);
+                    btnMujerTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(five.equals(""))
+                {
+                    txtFive.setText("Ixöq");
+                    btnMujerTraduccion.setEnabled(false);
+                    btnMujerTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(six.equals(""))
+                {
+                    txtSix.setText("Ixöq");
+                    btnMujerTraduccion.setEnabled(false);
+                    btnMujerTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
 
             case R.id.btnHombre:
                 if(one.equals(""))
@@ -105,8 +169,43 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
                     txtOne.setText("Hombre");
                     btnHombre.setEnabled(false);
                     btnHombre.setBackgroundColor(Color.GRAY);
+                    break;
                 }
-                break;
+                if(two.equals(""))
+                {
+                    txtTwo.setText("Hombre");
+                    btnHombre.setEnabled(false);
+                    btnHombre.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(three.equals(""))
+                {
+                    txtThree.setText("Hombre");
+                    btnHombre.setEnabled(false);
+                    btnHombre.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(four.equals(""))
+                {
+                    txtFour.setText("Hombre");
+                    btnHombre.setEnabled(false);
+                    btnHombre.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(five.equals(""))
+                {
+                    txtFive.setText("Hombre");
+                    btnHombre.setEnabled(false);
+                    btnHombre.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(six.equals(""))
+                {
+                    txtSix.setText("Hombre");
+                    btnHombre.setEnabled(false);
+                    btnHombre.setBackgroundColor(Color.GRAY);
+                    break;
+                }
 
             case R.id.btnHombreTraduccion:
                 if(one.equals(""))
@@ -114,8 +213,43 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
                     txtOne.setText("Achi");
                     btnHombreTraduccion.setEnabled(false);
                     btnHombreTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
                 }
-                break;
+                if(two.equals(""))
+                {
+                    txtTwo.setText("Achi");
+                    btnHombreTraduccion.setEnabled(false);
+                    btnHombreTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(three.equals(""))
+                {
+                    txtThree.setText("Achi");
+                    btnHombreTraduccion.setEnabled(false);
+                    btnHombreTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(four.equals(""))
+                {
+                    txtFour.setText("Achi");
+                    btnHombreTraduccion.setEnabled(false);
+                    btnHombreTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(five.equals(""))
+                {
+                    txtFive.setText("Achi");
+                    btnHombreTraduccion.setEnabled(false);
+                    btnHombreTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(six.equals(""))
+                {
+                    txtSix.setText("Achi");
+                    btnHombreTraduccion.setEnabled(false);
+                    btnHombreTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
 
             case R.id.btnNino:
                 if(one.equals(""))
@@ -123,8 +257,43 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
                     txtOne.setText("Niño");
                     btnNino.setEnabled(false);
                     btnNino.setBackgroundColor(Color.GRAY);
+                    break;
                 }
-                break;
+                if(two.equals(""))
+                {
+                    txtTwo.setText("Niño");
+                    btnNino.setEnabled(false);
+                    btnNino.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(three.equals(""))
+                {
+                    txtThree.setText("Niño");
+                    btnNino.setEnabled(false);
+                    btnNino.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(four.equals(""))
+                {
+                    txtFour.setText("Niño");
+                    btnNino.setEnabled(false);
+                    btnNino.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(five.equals(""))
+                {
+                    txtFive.setText("Niño");
+                    btnNino.setEnabled(false);
+                    btnNino.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(six.equals(""))
+                {
+                    txtSix.setText("Niño");
+                    btnNino.setEnabled(false);
+                    btnNino.setBackgroundColor(Color.GRAY);
+                    break;
+                }
 
             case R.id.btnNinoTraduccion:
                 if(one.equals(""))
@@ -132,8 +301,9 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
                     txtOne.setText("Ak´wal");
                     btnNinoTraduccion.setEnabled(false);
                     btnNinoTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
                 }
-                break;
+
         }
     }
 }
