@@ -19,10 +19,11 @@
         <activity
             android:name=".AprenderActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".Leccion1Activity" />
         <activity android:name=".LessonOneActivity" />
         <activity android:name=".LessonTwoActivity" />
-        <activity android:name=".LessonThreeActivity"></activity>
+        <activity android:name=".LessonThreeActivity" />
+        <activity android:name=".LessonFourActivity" />
+        <activity android:name=".LessonFiveActivity"></activity>
     </application>
 
 </manifest>

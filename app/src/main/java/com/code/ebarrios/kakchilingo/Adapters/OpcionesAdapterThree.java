@@ -2,6 +2,7 @@ package com.code.ebarrios.kakchilingo.Adapters;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.code.ebarrios.kakchilingo.LessonFourActivity;
 import com.code.ebarrios.kakchilingo.Models.Opciones;
 import com.code.ebarrios.kakchilingo.R;
 
@@ -55,6 +57,7 @@ public class OpcionesAdapterThree extends RecyclerView.Adapter<OpcionesAdapterTh
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     //Toast.makeText(view.getContext(),"Felicidades",Toast.LENGTH_SHORT).show();
+                                    activity.startActivity(new Intent(activity, LessonFourActivity.class));
                                 }
                             });
                     ventana.show();

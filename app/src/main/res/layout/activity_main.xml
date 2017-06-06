@@ -35,7 +35,7 @@
             android:id="@+id/Titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KAKCHILINGO"
+            android:text="KAQCHILINGO"
             android:layout_gravity="center_horizontal"
             android:paddingTop="25dp"
             android:textStyle="italic"
@@ -61,7 +61,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="100dp"
 
-            style="RaisedButtonDark"/>
+            style="@style/RaisedButtonDark"/>
 
     </LinearLayout>
 
