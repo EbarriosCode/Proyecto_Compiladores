@@ -12,52 +12,51 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LessonFiveActivity extends AppCompatActivity implements View.OnClickListener {
+public class LessonTenActivity extends AppCompatActivity implements View.OnClickListener{
+    EditText txtRespuestaLeccion10;
+    Button btnCalificarLeccion10;
+    String R10 = "un hombre una mujer";
 
-    EditText txtRespuestaLeccion5;
-    Button btnCalificarLeccion5;
-    String R5 = "yo soy un hombre";
-
-    TextView txtNino, txtHombre, txtMujer, txtSenora, txtMadre;
+    TextView txtUn, txtHombre, txtMujer, txtSenora, txtUna;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson_five);
+        setContentView(R.layout.activity_lesson_ten);
 
         //opciones para responder
-        txtNino = (TextView)findViewById(R.id.nino);
+        txtUn = (TextView)findViewById(R.id.un);
         txtMujer = (TextView)findViewById(R.id.mujer);
         txtHombre = (TextView)findViewById(R.id.hombre);
         txtSenora = (TextView)findViewById(R.id.senora);
-        txtMadre = (TextView)findViewById(R.id.madre);
+        txtUna = (TextView)findViewById(R.id.una);
 
         //habilitando los textviews para ser clickeables
-        txtNino.setOnClickListener(this);
+        txtUn.setOnClickListener(this);
         txtMujer.setOnClickListener(this);
         txtHombre.setOnClickListener(this);
         txtSenora.setOnClickListener(this);
-        txtMadre.setOnClickListener(this);
+        txtUna.setOnClickListener(this);
 
         // llamando al toolbar
-        showToolbar("LECCION 5",false);
+        showToolbar("LECCION 4",false);
 
-        txtRespuestaLeccion5 = (EditText)findViewById(R.id.txtLeccion5);
-        btnCalificarLeccion5 = (Button)findViewById(R.id.btnCalificarLeccion5);
+        txtRespuestaLeccion10 = (EditText)findViewById(R.id.txtLeccion10);
+        btnCalificarLeccion10 = (Button)findViewById(R.id.btnCalificarLeccion10);
 
-        btnCalificarLeccion5.setOnClickListener(new View.OnClickListener() {
+        btnCalificarLeccion10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String inputRespuestaLeccion4 = txtRespuestaLeccion5.getText().toString().toLowerCase();
+                String inputRespuestaLeccion10 = txtRespuestaLeccion10.getText().toString().toLowerCase().trim();
 
-                if(inputRespuestaLeccion4.equals(R5))
+                if(inputRespuestaLeccion10.equals(R10))
                 {
-                    AlertDialog.Builder ventana = new AlertDialog.Builder(LessonFiveActivity.this);
+                    AlertDialog.Builder ventana = new AlertDialog.Builder(LessonTenActivity.this);
                     ventana.setMessage("Felicidades traduciste muy bien");
-                    ventana.setTitle("LECCIÓN 5")
-                            .setPositiveButton("AVANZAR", new DialogInterface.OnClickListener() {
+                    ventana.setTitle("LECCIÓN 10")
+                            .setPositiveButton("TERMINAR", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    startActivity(new Intent(LessonFiveActivity.this, LessonSixActivity.class));
+                                    startActivity(new Intent(LessonTenActivity.this, FinalLevelOneActivity.class));
                                 }
                             });
                     ventana.show();
@@ -69,6 +68,7 @@ public class LessonFiveActivity extends AppCompatActivity implements View.OnClic
             }
         });
     }
+
     public void showToolbar(String title, boolean btnRegreso)
     {
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
@@ -79,26 +79,29 @@ public class LessonFiveActivity extends AppCompatActivity implements View.OnClic
 
     @Override
     public void onClick(View v) {
+        // recoger lo que ya hay dentro del input
+        String valorAnterior = txtRespuestaLeccion10.getText().toString();
+
         switch (v.getId())
         {
-            case R.id.nino:
-                txtRespuestaLeccion5.setText("Yo soy un "+txtNino.getText().toString());
+            case R.id.un:
+                txtRespuestaLeccion10.setText(valorAnterior+" "+txtUn.getText().toString());
                 break;
 
             case R.id.mujer:
-                txtRespuestaLeccion5.setText("Yo soy un "+txtMujer.getText().toString());
+                txtRespuestaLeccion10.setText(valorAnterior+" "+txtMujer.getText().toString());
                 break;
 
             case R.id.hombre:
-                txtRespuestaLeccion5.setText("Yo soy un "+txtHombre.getText().toString());
+                txtRespuestaLeccion10.setText(valorAnterior+" "+txtHombre.getText().toString());
                 break;
 
             case R.id.senora:
-                txtRespuestaLeccion5.setText("Yo soy un "+txtSenora.getText().toString());
+                txtRespuestaLeccion10.setText(valorAnterior+" "+txtSenora.getText().toString());
                 break;
 
-            case R.id.madre:
-                txtRespuestaLeccion5.setText("Yo soy un "+txtMadre.getText().toString());
+            case R.id.una:
+                txtRespuestaLeccion10.setText(valorAnterior+" "+txtUna.getText().toString());
                 break;
         }
     }

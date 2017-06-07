@@ -103,7 +103,7 @@
             android:id="@+id/btnHombreTraduccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ak´wal"
+            android:text="achi"
             android:background="@color/colorAccent"
             android:textColor="@android:color/white"
             android:layout_margin="5dp"/>
@@ -129,7 +129,7 @@
             android:id="@+id/btnNinoTraduccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="achi"
+            android:text="ak´wal"
             android:background="@color/colorAccent"
             android:textColor="@android:color/white"
             android:layout_margin="5dp"/>

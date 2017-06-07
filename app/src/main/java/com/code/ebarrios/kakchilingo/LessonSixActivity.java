@@ -1,12 +1,16 @@
 package com.code.ebarrios.kakchilingo;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LessonSixActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -16,6 +20,15 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
     Button btnCalificarLeccionSix;
 
     TextView txtOne,txtTwo,txtThree,txtFour,txtFive,txtSix;
+
+    // Respuestas
+        String mujer = "mujer";
+        String mujerTraduccion = "ixöq";
+        String hombre = "hombre";
+        String hombreTraduccion = "achi";
+        String nino = "niño";
+        String ninoTraduccion = "ak´wal";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +74,92 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(btnRegreso);
+    }
+
+    public void validarResultado()
+    {
+        // valores string despues de haber presionado los botones
+        String lblUno = txtOne.getText().toString().toLowerCase();
+        String lblDos = txtTwo.getText().toString().toLowerCase();
+        String lblTres = txtThree.getText().toString().toLowerCase();
+        String lblCuatro = txtFour.getText().toString().toLowerCase();
+        String lblCinco = txtFive.getText().toString().toLowerCase();
+        String lblSeis = txtSix.getText().toString().toLowerCase();
+
+
+        if((lblUno.equals(mujer) && lblDos.equals(mujerTraduccion)) || (lblTres.equals(mujer) && lblCuatro.equals(mujerTraduccion)) || (lblCinco.equals(mujer) && lblSeis.equals(mujerTraduccion))
+          || (lblUno.equals(mujerTraduccion) && lblDos.equals(mujer)) || (lblTres.equals(mujerTraduccion) && lblCuatro.equals(mujer)) || (lblCinco.equals(mujerTraduccion) && lblSeis.equals(mujer)))
+        {
+            //Toast.makeText(getApplicationContext(),"Correcto",Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder ventana = new AlertDialog.Builder(LessonSixActivity.this);
+            ventana.setMessage("Felicidades uniste los pares muy bien");
+            ventana.setTitle("LECCIÓN 6")
+                    .setPositiveButton("AVANZAR", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            startActivity(new Intent(LessonSixActivity.this, LessonSevenActivity.class));
+                        }
+                    });
+            ventana.show();
+        }
+
+        else if((lblUno.equals(hombre) && lblDos.equals(hombreTraduccion)) || (lblTres.equals(hombre) && lblCuatro.equals(hombreTraduccion)) || (lblCinco.equals(hombre) && lblSeis.equals(hombreTraduccion))
+                || (lblUno.equals(hombreTraduccion) && lblDos.equals(hombre)) || (lblTres.equals(hombreTraduccion) && lblCuatro.equals(hombre)) || (lblCinco.equals(hombreTraduccion) && lblSeis.equals(hombre)))
+        {
+            //Toast.makeText(getApplicationContext(),"Correcto",Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder ventana = new AlertDialog.Builder(LessonSixActivity.this);
+            ventana.setMessage("Felicidades uniste los pares muy bien");
+            ventana.setTitle("LECCIÓN 6")
+                    .setPositiveButton("AVANZAR", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            startActivity(new Intent(LessonSixActivity.this, LessonSevenActivity.class));
+                        }
+                    });
+            ventana.show();
+        }
+
+        else if((lblUno.equals(nino) && lblDos.equals(ninoTraduccion)) || (lblTres.equals(nino) && lblCuatro.equals(ninoTraduccion)) || (lblCinco.equals(nino) && lblSeis.equals(ninoTraduccion))
+                || (lblUno.equals(ninoTraduccion) && lblDos.equals(nino)) || (lblTres.equals(ninoTraduccion) && lblCuatro.equals(nino)) || (lblCinco.equals(ninoTraduccion) && lblSeis.equals(nino)))
+        {
+            //Toast.makeText(getApplicationContext(),"Correcto",Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder ventana = new AlertDialog.Builder(LessonSixActivity.this);
+            ventana.setMessage("Felicidades uniste los pares muy bien");
+            ventana.setTitle("LECCIÓN 6")
+                    .setPositiveButton("AVANZAR", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            startActivity(new Intent(LessonSixActivity.this, LessonSevenActivity.class));
+                        }
+                    });
+            ventana.show();
+        }
+
+        else
+        {
+            Toast.makeText(getApplicationContext(),"Incorrecto vuelve a intentarlo y aprende",Toast.LENGTH_SHORT).show();
+
+            txtOne.setText("");
+            txtTwo.setText("");
+            txtThree.setText("");
+            txtFour.setText("");
+            txtFive.setText("");
+            txtSix.setText("");
+
+            btnMujer.setEnabled(true);
+            btnMujerTraduccion.setEnabled(true);
+            btnHombre.setEnabled(true);
+            btnHombreTraduccion.setEnabled(true);
+            btnNino.setEnabled(true);
+            btnNinoTraduccion.setEnabled(true);
+
+            /*btnMujer.setBackgroundColor(Color.MAGENTA);
+            btnMujerTraduccion.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+            btnHombre.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+            btnHombreTraduccion.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+            btnNino.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+            btnNinoTraduccion.setBackgroundColor(getResources().getColor(R.color.colorAccent));*/
+        }
     }
 
     @Override
@@ -303,7 +402,46 @@ public class LessonSixActivity extends AppCompatActivity implements View.OnClick
                     btnNinoTraduccion.setBackgroundColor(Color.GRAY);
                     break;
                 }
+                if(two.equals(""))
+                {
+                    txtTwo.setText("Ak´wal");
+                    btnNinoTraduccion.setEnabled(false);
+                    btnNinoTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(three.equals(""))
+                {
+                    txtThree.setText("Ak´wal");
+                    btnNinoTraduccion.setEnabled(false);
+                    btnNinoTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(four.equals(""))
+                {
+                    txtFour.setText("Ak´wal");
+                    btnNinoTraduccion.setEnabled(false);
+                    btnNinoTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(five.equals(""))
+                {
+                    txtFive.setText("Ak´wal");
+                    btnNinoTraduccion.setEnabled(false);
+                    btnNinoTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
+                if(six.equals(""))
+                {
+                    txtSix.setText("Ak´wal");
+                    btnNinoTraduccion.setEnabled(false);
+                    btnNinoTraduccion.setBackgroundColor(Color.GRAY);
+                    break;
+                }
 
+            case R.id.btnCalificarLeccion6:
+                //startActivity(new Intent(LessonSixActivity.this,LessonSixActivity.class));
+                validarResultado();
+                break;
         }
     }
 }
