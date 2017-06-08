@@ -35,6 +35,23 @@
         <activity android:name=".LessonNineActivity" />
         <activity android:name=".LessonTenActivity" />
         <activity android:name=".FinalLevelOneActivity" />
+        <activity android:name=".LevelTwo.MainLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonOneLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonTwoLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonThreeLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonFourLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonFiveLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonSixLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonSevenLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonHeightLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonNineLevelTwoActivity" />
+        <activity android:name=".LevelTwo.LessonTenLevelTwoActivity" />
+        <activity android:name=".LevelTwo.FinalLevelTwoActivity" />
+        <activity
+            android:name=".AntesDeEmpezarActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".AcercaDeActivity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

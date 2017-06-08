@@ -3,12 +3,12 @@ package com.code.ebarrios.kakchilingo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button btnEmpezar;
@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnEmpezar = (Button)findViewById(R.id.btnEmpezar);
         btnEmpezar.setOnClickListener(this);
+
+        showToolbar("COMPILADORES-UMG",false);
     }
 
     @Override
@@ -41,12 +43,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId())
         {
+            case R.id.antesDe:
+                startActivity(new Intent(MainActivity.this,AntesDeEmpezarActivity.class));
+                return true;
+
             case R.id.acercaDe:
-                Toast.makeText(getApplicationContext(),"Acerca de ",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Acerca de ",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,AcercaDeActivity.class));
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void showToolbar(String title, boolean btnRegreso)
+    {
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(title);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(btnRegreso);
+        getSupportActionBar().openOptionsMenu();
     }
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.code.ebarrios.kakchilingo.AntesDeEmpezarActivity">
+
+    <include layout="@layout/actionbar_toolbar"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Idioma kakchikel"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="25dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+    <TextView
+        android:id="@+id/txtParrafo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textoAntesDe"/>
+
+
+
+    </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/UsoDeDieresis"
+            android:padding="25dp"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/UsoDeApostrofe"
+        android:padding="25dp"
+        />
+
+
+</LinearLayout>

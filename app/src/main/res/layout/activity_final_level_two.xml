@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.code.ebarrios.kakchilingo.FinalLevelOneActivity">
+    tools:context="com.code.ebarrios.kakchilingo.LevelTwo.FinalLevelTwoActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felicidades "
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txtNombreParticipante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="25dp">
 
         <TextView
             android:id="@+id/tituloFinalLevel"
@@ -62,13 +83,13 @@
         style="@style/RaisedButtonDark"
         android:layout_gravity="center_horizontal"/>
     <Button
-        android:id="@+id/btnContinuar"
+        android:id="@+id/btnTerminar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:layout_marginRight="25dp"
         android:layout_marginLeft="25dp"
-        android:text="CONTINUAR"
+        android:text="TERMINAR"
         style="@style/RaisedButtonDark"
         android:layout_gravity="center_horizontal"/>
 

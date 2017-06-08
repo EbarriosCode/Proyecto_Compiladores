@@ -22,4 +22,21 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="textoAntesDe">
+        El kaqchikel, kakchikel o cakchiquel es un idioma hablado por la población kaqchikel en la región centro occidental de Guatemala. El idioma kakchikel forma parte del grupo quicheano de lenguas, que a su vez es parte de la familia lingüística mayense. Con aproximadamente medio millón de hablantes, es una de las lenguas mayenses más importantes en Guatemala. La mayoría de los hablantes del kakchikel es bilingüe de su lengua nativa y español.
+La variación dialectal del idioma kakchikel es relativamente elevada e incluye al kakchikel central (132.000 hablantes) en Chimaltenango y Patzún, el kakchikel oriental (100.000) al nor-oeste de la Ciudad de Guatemala y alrededor de San Juan Sacatepéquez, San Pedro Sacatepéquez, el kakchikel occidental, el kakchikel centro-sur (43.000) en el área de la panamericana al oeste de la Ciudad de Guatemala, el kakchikel sureño (43.000) al sur de Antigua, El kakchikel norteño (24.000) al nor-este de Chimaltenango, así como el kakchikel de San Martín Jilotepeque y Santa Ana Chimaltenango.
+    </string>
+
+    <string name="UsoDeDieresis">
+        Uso de diéresis
+Esta grafía indica que la vocal sobre la cual se encuentra debe pronunciarse relajada. Las vocales relajadas son a, e, i, o, u con diéresis en cada una.
+
+Ejemplo: tzäy = salado
+    </string>
+
+    <string name="UsoDeApostrofe">
+        Uso de apóstrofo
+Esta grafía indica la pronunciación fuerte sobre la letra que está colocada.
+    </string>
 </resources>

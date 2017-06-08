@@ -6,20 +6,30 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.code.ebarrios.kakchilingo.LevelTwo.MainLevelTwoActivity;
+
 public class FinalLevelOneActivity extends AppCompatActivity {
-    Button btnFinalLevelOne;
+    Button btnContinuar,btnEmpezarDeNuevo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_level_one);
 
-        btnFinalLevelOne = (Button)findViewById(R.id.btnFinalLevelOne);
+        btnContinuar = (Button)findViewById(R.id.btnContinuar);
+        btnEmpezarDeNuevo = (Button)findViewById(R.id.btnEmpezarDeNuevo);
 
-        btnFinalLevelOne.setOnClickListener(new View.OnClickListener() {
+        btnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FinalLevelOneActivity.this,MainActivity.class));
+                startActivity(new Intent(FinalLevelOneActivity.this,MainLevelTwoActivity.class));
+            }
+        });
+
+        btnEmpezarDeNuevo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FinalLevelOneActivity.this,AprenderActivity.class));
             }
         });
     }

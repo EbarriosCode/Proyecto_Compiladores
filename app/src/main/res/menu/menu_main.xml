@@ -2,9 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item android:id="@+id/antesDe"
+        android:title="Antes de Iniciar"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 
     <item android:id="@+id/acercaDe"
-        android:title="Acerca De!"
+        android:title="Acerca De"
         android:orderInCategory="100"
         app:showAsAction="never" />
 </menu>

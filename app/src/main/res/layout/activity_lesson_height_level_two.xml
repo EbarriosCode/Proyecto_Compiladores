@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.code.ebarrios.kakchilingo.LevelTwo.LessonHeightLevelTwoActivity">
+
+    <include layout="@layout/actionbar_toolbar"></include>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traduce 'Guatemala'"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="25dp"/>
+
+    <ImageView
+        android:id="@+id/imagenGuatemala"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/guatemala"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="25dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtLeccion8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu respuesta aquí"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCalificarLeccion8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calificar"
+        android:layout_marginTop="75dp"
+        style="@style/RaisedButtonDark"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+</LinearLayout>
