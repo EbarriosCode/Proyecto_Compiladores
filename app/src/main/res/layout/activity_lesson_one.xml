@@ -11,12 +11,12 @@
 <include layout="@layout/actionbar_toolbar"></include>
     <TextView
         android:id="@+id/TituloLeccion1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="¿Cuál de éstas palabras significa Mujer?"
         android:layout_marginTop="70dp"
         android:layout_marginLeft="5dp"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textColor="#000"
         />
 

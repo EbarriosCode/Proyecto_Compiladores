@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.code.ebarrios.kakchilingo.AcercaDeActivity;
+import com.code.ebarrios.kakchilingo.AntesDeEmpezarActivity;
 import com.code.ebarrios.kakchilingo.R;
 
 public class MainLevelTwoActivity extends AppCompatActivity {
@@ -52,8 +54,13 @@ public class MainLevelTwoActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId())
         {
+            case R.id.antesDe:
+                startActivity(new Intent(MainLevelTwoActivity.this, AntesDeEmpezarActivity.class));
+                return true;
+
             case R.id.acercaDe:
-                Toast.makeText(getApplicationContext(),"Acerca de ",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Acerca de ",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainLevelTwoActivity.this, AcercaDeActivity.class));
                 return true;
 
             default:
