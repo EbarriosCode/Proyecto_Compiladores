@@ -1,7 +1,9 @@
 package com.code.ebarrios.kakchilingo;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -64,5 +66,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getSupportActionBar().setTitle(title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(btnRegreso);
         getSupportActionBar().openOptionsMenu();
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder ventana = new AlertDialog.Builder(MainActivity.this);
+        ventana.setMessage("Estás seguro de salir");
+        ventana.setTitle("Salir")
+                .setPositiveButton("Salir", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("Permanecer aquí", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+
+        ventana.show();
     }
 }

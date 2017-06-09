@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KakchiLingo.iml" filepath="$PROJECT_DIR$/KakchiLingo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kaqchilingo.iml" filepath="$PROJECT_DIR$/kaqchilingo.iml" />
     </modules>
   </component>
 </project>
